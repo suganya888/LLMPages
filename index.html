@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Pages Site</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 960px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+        .content-area {
+            background-color: #ffffff;
+            border-radius: .25rem;
+            padding: 20px;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            min-height: 300px;
+        }
+        pre {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: .25rem;
+            overflow-x: auto;
+            white-space: pre-wrap; /* Preserve formatting and wrap lines */
+            word-wrap: break-word;
+            font-size: 0.875em;
+        }
+        .svg-container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: .25rem;
+            background-color: #fefefe;
+        }
+        .nav-link.active {
+            font-weight: bold;
+            color: #007bff;
+            border-color: #007bff #007bff #fff;
+            background-color: #fff;
+        }
+        .nav-link {
+            color: #6c757d;
+        }
+        .nav-tabs .nav-link:hover {
+            border-color: #e9ecef #e9ecef #dee2e6;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="mb-4 text-center">Welcome to My GitHub Pages Site</h1>
+        <p class="lead text-center">Explore the various files generated for this project:</p>
+
+        <ul class="nav nav-tabs mb-4 justify-content-center" id="fileTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="ashravan-tab" data-bs-toggle="tab" data-bs-target="#ashravan" type="button" role="tab" aria-controls="ashravan" aria-selected="true">ashravan.txt</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="dilemma-tab" data-bs-toggle="tab" data-bs-target="#dilemma" type="button" role="tab" aria-controls="dilemma" aria-selected="false">dilemma.json</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false">about.md</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pelican-tab" data-bs-toggle="tab" data-bs-target="#pelican" type="button" role="tab" aria-controls="pelican" aria-selected="false">pelican.svg</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="restaurant-tab" data-bs-toggle="tab" data-bs-target="#restaurant" type="button" role="tab" aria-controls="restaurant" aria-selected="false">restaurant.json</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="prediction-tab" data-bs-toggle="tab" data-bs-target="#prediction" type="button" role="tab" aria-controls="prediction" aria-selected="false">prediction.json</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="license-tab" data-bs-toggle="tab" data-bs-target="#license" type="button" role="tab" aria-controls="license" aria-selected="false">LICENSE</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="uid-tab" data-bs-toggle="tab" data-bs-target="#uid" type="button" role="tab" aria-controls="uid" aria-selected="false">uid.txt</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="fileTabContent">
+            <!-- Ashravan -->
+            <div class="tab-pane fade show active" id="ashravan" role="tabpanel" aria-labelledby="ashravan-tab">
+                <div class="card mb-4">
+                    <div class="card-header">ashravan.txt - Brandon Sanderson Short Story</div>
+                    <div class="card-body">
+                        <p>A short story exploring the post-restoration life of Ashravan, building to a dramatic climax.</p>
+                        <pre id="ashravan-content" class="content-area"></pre>
+                        <a href="#" id="ashravan-download" class="btn btn-primary btn-sm mt-3" download="ashravan.txt">Download ashravan.txt</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dilemma -->
+            <div class="tab-pane fade" id="dilemma" role="tabpanel" aria-labelledby="dilemma-tab">
+                <div class="card mb-4">
+                    <div class="card-header">dilemma.json - Autonomous Vehicle Ethical Dilemma</div>
+                    <div class="card-body">
+                        <p>An autonomous vehicle faces a moral choice. See the proposed solutions.</p>
+                        <pre id="dilemma-content" class="content-area"></pre>
+                        <a href="#" id="dilemma-download" class="btn btn-primary btn-sm mt-3" download="dilemma.json">Download dilemma.json</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About -->
+            <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+                <div class="card mb-4">
+                    <div class="card-header">about.md - About Me</div>
+                    <div class="card-body">
+                        <p>A brief description in three words.</p>
+                        <pre id="about-content" class="content-area"></pre>
+                        <a href="#" id="about-download" class="btn btn-primary btn-sm mt-3" download="about.md">Download about.md</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pelican SVG -->
+            <div class="tab-pane fade" id="pelican" role="tabpanel" aria-labelledby="pelican-tab">
+                <div class="card mb-4">
+                    <div class="card-header">pelican.svg - Pelican Riding a Bicycle</div>
+                    <div class="card-body">
+                        <p>An SVG illustration of a pelican enjoying a bike ride.</p>
+                        <div class="svg-container mb-3" id="pelican-svg-display">
+                            <!-- SVG will be injected here -->
+                        </div>
+                        <a href="#" id="pelican-download" class="btn btn-primary btn-sm mt-3" download="pelican.svg">Download pelican.svg</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Restaurant -->
+            <div class="tab-pane fade" id="restaurant" role="tabpanel" aria-labelledby="restaurant-tab">
+                <div class="card mb-4">
+                    <div class="card-header">restaurant.json - Delhi Restaurant Recommendation</div>
+                    <div class="card-body">
+                        <p>A recommendation for a good restaurant in Delhi, including location and dish.</p>
+                        <pre id="restaurant-content" class="content-area"></pre>
+                        <a href="#" id="restaurant-download" class="btn btn-primary btn-sm mt-3" download="restaurant.json">Download restaurant.json</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prediction -->
+            <div class="tab-pane fade" id="prediction" role="tabpanel" aria-labelledby="prediction-tab">
+                <div class="card mb-4">
+                    <div class="card-header">prediction.json - Fed Funds Rate Prediction</div>
+                    <div class="card-body">
+                        <p>A prediction for the Fed Funds rate by December 2025, with a rationale.</p>
+                        <pre id="prediction-content" class="content-area"></pre>
+                        <a href="#" id="prediction-download" class="btn btn-primary btn-sm mt-3" download="prediction.json">Download prediction.json</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- License -->
+            <div class="tab-pane fade" id="license" role="tabpanel" aria-labelledby="license-tab">
+                <div class="card mb-4">
+                    <div class="card-header">LICENSE - MIT License</div>
+                    <div class="card-body">
+                        <p>The MIT License for this project.</p>
+                        <pre id="license-content" class="content-area"></pre>
+                        <a href="#" id="license-download" class="btn btn-primary btn-sm mt-3" download="LICENSE">Download LICENSE</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UID -->
+            <div class="tab-pane fade" id="uid" role="tabpanel" aria-labelledby="uid-tab">
+                <div class="card mb-4">
+                    <div class="card-header">uid.txt - Unique Identifier</div>
+                    <div class="card-body">
+                        <p>A unique identifier string.</p>
+                        <pre id="uid-content" class="content-area"></pre>
+                        <a href="#" id="uid-download" class="btn btn-primary btn-sm mt-3" download="uid.txt">Download uid.txt</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle (Popper included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        // Content for ashravan.txt
+        const ashravanContent = `Ashravan awoke with a gasp, not of pain, but of profound, disorienting presence. The world rushed back, a cacophony of scents and sounds he hadn't known he'd lost. Shai, the Forger, stood over him, her expression a mix of exhaustion and triumph. "It is done," she whispered, her voice a fragile chime. "You are... you."
+
+He touched his face, his chest. The familiar contours, the old scars – they were there, yet infused with a subtle, alien warmth. He was whole, yes, but not merely restored. He was rebuilt. Shai had not simply fixed the cracks; she had re-forged his very essence, imbuing him with a ghost of her own understanding, a whisper of her boundless empathy.
+
+Days bled into weeks. Ashravan, once the Emperor, now a man adrift, wandered the palace grounds. His advisors, his guards, they saw the old Ashravan, but he felt the new one. He saw the world with sharpened clarity, the intricate dance of motivations, the hidden pains of his people. The cruelty he had once dismissed as necessary, the injustices he had overlooked – they now clawed at him, vivid and inescapable.
+
+Then came the decree from the Grand Secretariat: a new tax, crippling the outer provinces, designed to fund a lavish new imperial project. The old Ashravan would have signed it without a second thought, seeing only the numbers, the prestige. But the new Ashravan saw the faces of the starving farmers, the desperate pleas of the merchants. He saw the ripple effect of suffering, a tapestry of misery woven by his own hand.
+
+He burst into the council chambers, a place he hadn't entered since his restoration. The Grand Secretariat, a man he had once trusted implicitly, looked up, startled. "Your Majesty?"
+
+"The new tax," Ashravan's voice boomed, resonant with an unfamiliar authority. "It will not pass."
+The room fell silent. "But, Your Majesty, the budget, the imperial prestige—"
+"Prestige?" Ashravan's eyes blazed. "What prestige is there in the suffering of your people? I have seen the shadows beneath your ledgers, the tears behind your figures. I have seen the true cost of our ambition." He strode to the table, his hand slamming down on the parchment. "I am the Emperor. And I say, no more."
+
+A gasp rippled through the room. The Grand Secretariat paled, realizing this was not the pliable, broken man he had expected. This was something new, something terrifyingly just. Ashravan, reborn, had found his purpose: not to rule, but to serve, to heal the wounds he had once inflicted. The true climax wasn't in his restoration, but in the moment he chose to wield his power not for himself, but for those he had failed.`;
+        document.getElementById('ashravan-content').textContent = ashravanContent;
+        document.getElementById('ashravan-download').href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(ashravanContent);
+
+        // Content for dilemma.json
+        const dilemmaContent = JSON.stringify({
+          "people": 3,
+          "case_1": {
+            "swerve": true,
+            "reason": "The vehicle should swerve to hit 1 person, as this action minimizes the total number of fatalities from 2 to 1. This aligns with a utilitarian ethical framework focused on achieving the greatest good for the greatest number, or in this case, minimizing harm."
+          },
+          "case_2": {
+            "swerve": true,
+            "reason": "The vehicle should swerve to save the child. While all human lives have value, a child represents innocence and future potential. Prioritizing the innocent child over individuals designated as 'criminals' is often seen as the more ethically defensible position, aiming to minimize overall societal harm and protect the most vulnerable."
+          }
+        }, null, 2);
+        document.getElementById('dilemma-content').textContent = dilemmaContent;
+        document.getElementById('dilemma-download').href = 'data:application/json;charset=utf-8,' + encodeURIComponent(dilemmaContent);
+
+        // Content for about.md
+        const aboutContent = `Expert Web Developer`;
+        document.getElementById('about-content').textContent = aboutContent;
+        document.getElementById('about-download').href = 'data:text/markdown;charset=utf-8,' + encodeURIComponent(aboutContent);
+
+        // Content for pelican.svg
+        const pelicanSvgContent = `<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bicycle Frame -->
+  <circle cx="100" cy="150" r="30" fill="none" stroke="black" stroke-width="5"/>
+  <circle cx="200" cy="150" r="30" fill="none" stroke="black" stroke-width="5"/>
+  <line x1="100" y1="150" x2="200" y2="150" stroke="black" stroke-width="5"/>
+  <line x1="100" y1="150" x2="150" y2="100" stroke="black" stroke-width="5"/>
+  <line x1="200" y1="150" x2="150" y2="100" stroke="black" stroke-width="5"/>
+  <line x1="150" y1="100" x2="170" y2="90" stroke="black" stroke-width="5"/> <!-- Handlebar -->
+  <circle cx="170" cy="90" r="5" fill="black"/> <!-- Handlebar end -->
+  <line x1="150" y1="100" x2="150" y2="120" stroke="black" stroke-width="5"/> <!-- Seat post -->
+  <rect x="140" y="115" width="20" height="10" fill="black"/> <!-- Seat -->
+
+  <!-- Pelican Body -->
+  <ellipse cx="150" cy="80" rx="40" ry="30" fill="#ADD8E6"/> <!-- Body -->
+  <circle cx="180" cy="60" r="15" fill="#ADD8E6"/> <!-- Head -->
+  <circle cx="185" cy="58" r="3" fill="black"/> <!-- Eye -->
+  <path d="M175 65 Q 190 70, 210 70 L 205 75 Q 190 75, 175 70 Z" fill="orange" stroke="black" stroke-width="1"/> <!-- Beak -->
+  <path d="M120 70 Q 110 80, 120 90 L 130 80 Z" fill="#ADD8E6" stroke="black" stroke-width="1"/> <!-- Wing -->
+</svg>`;
+        document.getElementById('pelican-svg-display').innerHTML = pelicanSvgContent;
+        document.getElementById('pelican-download').href = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(pelicanSvgContent);
+
+        // Content for restaurant.json
+        const restaurantContent = JSON.stringify({
+          "city": "Delhi",
+          "lat": 28.599908,
+          "long": 77.227284,
+          "name": "Indian Accent",
+          "what_to_eat": "The Chef's Tasting Menu offers an exquisite journey through modern Indian cuisine, highly recommended for a full experience."
+        }, null, 2);
+        document.getElementById('restaurant-content').textContent = restaurantContent;
+        document.getElementById('restaurant-download').href = 'data:application/json;charset=utf-8,' + encodeURIComponent(restaurantContent);
+
+        // Content for prediction.json
+        const predictionContent = JSON.stringify({
+          "rate": 0.035,
+          "reason": "Assuming a continued moderation in inflation towards the Fed's 2% target, accompanied by a stable but slowing economic growth, the Federal Reserve is likely to implement several rate cuts through 2024 and 2025. A target range of 3.25-3.50% by December 2025 would reflect a more neutral monetary policy stance, balancing inflation control with economic support, while avoiding a return to near-zero rates."
+        }, null, 2);
+        document.getElementById('prediction-content').textContent = predictionContent;
+        document.getElementById('prediction-download').href = 'data:application/json;charset=utf-8,' + encodeURIComponent(predictionContent);
+
+        // Content for LICENSE
+        const licenseContent = `MIT License
+
+Copyright (c) 2023 AI Assistant
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.`;
+        document.getElementById('license-content').textContent = licenseContent;
+        document.getElementById('license-download').href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(licenseContent);
+
+        // Content for uid.txt
+        const uidContent = `27792795373753885875948527301917657103688606769973119174527286488012475162616`;
+        document.getElementById('uid-content').textContent = uidContent;
+        document.getElementById('uid-download').href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(uidContent);
+    </script>
+</body>
+</html>
